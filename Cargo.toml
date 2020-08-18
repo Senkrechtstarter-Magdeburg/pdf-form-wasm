@@ -1,6 +1,6 @@
 [package]
-name = "pdfformfill"
-version = "0.1.4"
+name = "pdf-form-wasm"
+version = "0.1.6"
 authors = ["Björn Gehrke"]
 edition = "2018"
 license = "MIT"
@@ -16,7 +16,7 @@ crate-type = ["cdylib", "rlib"]
 default = ["console_error_panic_hook"]
 
 [dependencies]
-pdf-form = { path = "../pdf-form" }
+pdf-form = { git = "https://github.com/Senkrechtstarter-Magdeburg/pdf-form.git" }
 
 wasm-bindgen = "0.2.63"
 
